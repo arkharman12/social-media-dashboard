@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    /* Font */
+    --inter: "Inter", sans-serif;
+
+    /* Primary colors */
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear-gradient(to right, hsl(37, 97%, 70%),hsl(329, 70%, 58%));
+    --youtube: hsl(348, 97%, 39%);
+
+    /* Dark theme toggle color */
+    --dark-toggle: linear-gradient(hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
+    /* Light theme toggle color */
+    --light-toggle: hsl(230, 22%, 74%);
+
+    /* Dark Theme */
+
+    /* (BG) */
+    --very-dark-blue : hsl(230, 17%, 14%);
+    /* (Top BG Pattern) */
+    --very-dark-blue: hsl(232, 19%, 15%);
+    /* (Card BG) */
+    --dark-desaturated-blue: hsl(228, 28%, 20%);
+    /* (Text) */
+    --desaturated-blue: hsl(228, 34%, 66%);
+    /* (Text) */
+    --dark-white: hsl(0, 0%, 100%);
+
+    /* Light Theme */
+
+    /* (BG) */
+    --light-white: hsl(0, 0%, 100%);
+    /* (Top BG Pattern) */
+    --very-pale-blue: hsl(225, 100%, 98%);
+    /* (Card BG) */
+    --light-grayish-blue: hsl(227, 47%, 96%);
+    /* (Text) */
+    --dark-grayish-blue: hsl(228, 12%, 44%);
+    /* (Text) */
+    --very-dark-blue: hsl(230, 17%, 14%);
+
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 14px;
+    font-family: var(--inter);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 40px;
+    border: 2px solid red;
+}
+
+/* Header styles */
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading h3 {
+    font-size: 28px;
+}
+
+.heading p {
+    color: var(--dark-grayish-blue)
+}
+
+.dark-light-btn {
+    display: flex;
+}
+
+.dark-light-btn p {
+    color: var(--dark-grayish-blue);
+    margin-right: 10px;
+}
+
+/* Top grid styles */
+.top-grid {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--light-grayish-blue);
+    padding: 20px 0 20px 0;
+    border-radius: 3px;
+}
+
+.card-fb {
+    border-top: 3px solid var(--facebook);
+}
+
+.card-twitter {
+    border-top: 3px solid var(--twitter);
+}
+
+.card-insta {
+    position: relative;
+    text-align: center;
+}
+
+.card-insta::before {
+    content: '';
+    background-image: var(--instagram);
+    top: 0px;
+    left: 0px;
+    bottom: 98.47%;
+    right: 0px;
+    position: absolute;
+    z-index: 1;
+}
+
+.card-yt {
+    border-top: 3px solid var(--youtube);
+}
+
+.icon-text {
+    display: flex;
+    flex-direction: row;
+}
+
+.icon-text img {
+    margin-right: 6px;
+}
+
+.card .number {
+    font-size: 44px;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.card .followers {
+    color: var(--dark-grayish-blue);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.change {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change img {
+    height: 4px;
+    margin-right: 3px;
+}
+
+.green {
+    color: var(--lime-green);
+}
+
+.red {
+    color: var(--bright-red);
+}
+
+
