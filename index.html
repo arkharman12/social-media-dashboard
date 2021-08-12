@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-light">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,7 +23,10 @@
 
       <div class="dark-light-btn">
         <p>Dark Mode</p>
-        <button>Toggle button</button>
+        <label id="switch" class="switch">
+          <input type="checkbox" id="slider">
+          <span class="slider round"></span>
+        </label>
       </div>
 
     </div>
@@ -88,7 +91,137 @@
 
     </div>
 
+
+    <!-- Divider -->
+    <h3 class="overview-divider">Overview - Today</h3>
+
+    <!-- Bottom grid -->
+    <div class="bottom-grid">
+
+      <div class=" overview overview-one">
+        <div class="text-icon">
+          <p class="over-heading">Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="Facebook icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">87</p>
+          <div class="change">
+            <img src="./images/icon-up.svg" alt="Up down">
+            <p class="green">3%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview overview-two">
+        <div class="text-icon">
+          <p class="over-heading">Page Views</p>
+          <img src="./images/icon-facebook.svg" alt="Facebook icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">52</p>
+          <div class="change">
+            <img src="./images/icon-down.svg" alt="Down icon">
+            <p class="red">2%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview overview-three">
+        <div class="text-icon">
+          <p class="over-heading">Likes</p>
+          <img src="./images/icon-instagram.svg" alt="Instagram icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">5462</p>
+          <div class="change">
+            <img src="./images/icon-up.svg" alt="Up icon">
+            <p class="green">5257%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview overview-four">
+        <div class="text-icon">
+          <p class="over-heading">Profile Views</p>
+          <img src="./images/icon-instagram.svg" alt="Instagram icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">52k</p>
+          <div class="change">
+            <img src="./images/icon-up.svg" alt="Up icon">
+            <p class="green">1375%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview overview-five">
+        <div class="text-icon">
+          <p class="over-heading">Retweets</p>
+          <img src="./images/icon-twitter.svg" alt="Twitter icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">117</p>
+          <div class="change">
+            <img src="./images/icon-up.svg" alt="Up icon">
+            <p class="green">303%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview overview-six">
+        <div class="text-icon">
+          <p class="over-heading">Likes</p>
+          <img src="./images/icon-twitter.svg" alt="Twitter icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">507</p>
+          <div class="change">
+            <img src="./images/icon-up.svg" alt="Up icon">
+            <p class="green">553%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview overview-seven">
+        <div class="text-icon">
+          <p class="over-heading">Likes</p>
+          <img src="./images/icon-youtube.svg" alt="Youtube icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">107</p>
+          <div class="change">
+            <img src="./images/icon-down.svg" alt="Down icon">
+            <p class="red">19%</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="overview overview-eight">
+        <div class="text-icon">
+          <p class="over-heading">Total Views</p>
+          <img src="./images/icon-youtube.svg" alt="Youtube icon">
+        </div>
+
+        <div class="num-num">
+          <p class="num-big">1407</p>
+          <div class="change">
+            <img src="./images/icon-down.svg" alt="Down icon">
+            <p class="red">12%</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
   </div>
   
+  <script src="script.js"></script>
 </body>
 </html>
